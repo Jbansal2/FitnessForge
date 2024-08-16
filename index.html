@@ -1,1 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- /* <-------------------- Header Html------------------>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Fitness<span class="logo1">Forge</span></div>
+            <ul class="nav-menu" id="nav-menu">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Features">Feature</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Membership"> Membership</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+                <a href="#" id="user-icon">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <div id="login-modal" class="login-modal">
+                    <div class="login-content">
+                        <span class="close-login" id="close-login">&times;</span>
+                        <h2>Login</h2>
+                        <div class="login-options">
+                            <button class="google-login" id="google-login">Login with Google</button>
+                            <p>or</p>
+                            <form id="login-form">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                                <button type="submit">Login with Email</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart-menu" class="cart-menu" style="display: none;">
+                    <!-- Cart content... -->
+                </div>
+                <span class="toggle-btn" id="toggle-btn"><i class="fas fa-bars"></i></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-content">
+            <span class="close-checkout">&times;</span>
+            <h2>Checkout</h2>
+            <div class="checkout-items">
+                <!-- Items will be dynamically added here -->
+            </div>
+            <p class="checkout-total">Total: $0.00</p>
+            <button class="place-order-btn">Place Order</button>
+        </div>
+    </div>
+    <!-- /* <-------------------- Hero Section  Html------------------>
+    <section class="hero-section" id="Home">
+        <div class="hero-content">
+            <p><i class="fas fa-plus"></i><i class="fas fa-plus"></i> What We Have To Offer</p>
+            <h1>Your Body <span>Can Stand</span> Almost Anything</h1>
+            <p>Beat The Routine. Train At Caliber Of World Champions And Get In The Best Shape Of Your Life.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Get Started</a>
+                <a href="#" class="btn watch-video"><i class="fas fa-play"></i> Watch Videos</a>
+            </div>
+            <div class="stats">
+                <div>
+                    <h3>1200+</h3>
+                    <p>Members</p>
+                </div>
+                <div>
+                    <h3>12+</h3>
+                    <p>Trainers</p>
+                </div>
+                <div>
+                    <h3>35+</h3>
+                    <p>Year of service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social Media Links -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <!-- /* <-------------------- Logo Banner Section  Html------------------>
+    <div class="logo-banner">
+        <div class="logo-track">
+            <div class="logo-item">#INSIDE FITNESS</div>
+            <div class="logo-item">#Running fitness</div>
+            <div class="logo-item">#CROSSSPORT</div>
+            <div class="logo-item">#FLEX</div>
+            <div class="logo-item">#FITNESS TRIBE</div>
+            <div class="logo-item">#INSIDE FITNESS</div>
+            <div class="logo-item">#INSIDE FITNESS</div>
+            <div class="logo-item">#Running fitness</div>
+            <div class="logo-item">#CROSSSPORT</div>
+            <div class="logo-item">#FLEX</div>
+            <div class="logo-item">#FITNESS TRIBE</div>
+
+
+        </div>
+    </div>
+    <!-- /* <-------------------- features-section  Html------------------>
+    <section class="features-section1" id="Features">
+        <div class="content1">
+            <div class="content1-1">
+                <h2><i class="fas fa-plus"></i><i class="fas fa-plus"></i> WHY CHOOSE US</h2>
+                <h1>Push Your <span class="highlight1">Limit</span> Forward</h1>
+            </div>
+            <div class="content1-2">
+                <p>Train with the best experts in the bodybuilding field. Your results will speak for themselves. Try
+                    the latest
+                    exercising trends, innovative equipment, and special nutrition plans.</p>
+            </div>
+        </div>
+        <div class="carousel1">
+            <div class="cards1">
+                <div class="card1">
+                    <div class="icon1">&#128170;</div>
+                    <h3>Quality Equipment</h3>
+                    <p>Maecenas Tempus, Tellus Eget Condimentum Rhoncus, Sem Quam Semper Libero, Sit Amet Adipisic.</p>
+                    <a href="#" class="learn-more1">Learn More</a>
+                </div>
+                <div class="card1">
+                    <div class="icon1">&#127859;</div>
+                    <h3>Healthy Nutrition Plan</h3>
+                    <p>Maecenas Tempus, Tellus Eget Condimentum Rhoncus, Sem Quam Semper Libero, Sit Amet Adipisic.</p>
+                    <a href="#" class="learn-more1">Learn More</a>
+                </div>
+                <div class="card1">
+                    <div class="icon1">&#128703;</div>
+                    <h3>Shower Service</h3>
+                    <p>Maecenas Tempus, Tellus Eget Condimentum Rhoncus, Sem Quam Semper Libero, Sit Amet Adipisic.</p>
+                    <a href="#" class="learn-more1">Learn More</a>
+                </div>
+                <div class="card1">
+                    <div class="icon1">&#128170;</div>
+                    <h3>Personalized Training</h3>
+                    <p>Maecenas Tempus, Tellus Eget Condimentum Rhoncus, Sem Quam Semper Libero, Sit Amet Adipisic.</p>
+                    <a href="#" class="learn-more1">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* <-------------------- fitness-hero-section  Html------------------>
+    <section class="fitness-hero" id="Portfolio">
+        <div class="fitness-image">
+            <img src="image/fitness-hero.jpg" alt="Workout Image">
+        </div>
+        <div class="fitness-content">
+            <h2><span>01</span> ++</h2>
+            <h1>BUILT TO BRING</h1>
+            <h1 class="highlight">BEST RESULT</h1>
+            <p>Tune up your shoulders, legs, and lower back. Choose a workout that can improve your balance, strength,
+                and overall condition. Our team of experts will follow you through the whole workout process. Your body
+                will thank you.</p>
+            <div class="action-buttons">
+                <a href="#" class="btn learn-more">Read More</a>
+                <a href="#" class="btn join-now">Join Today</a>
+            </div>
+        </div>
+    </section>
+    <!-- /* <-------------------- fitness-hero-Team-section  Html------------------>
+    <section id="Team">
+        <div class="trainers-section">
+            <h3>++<span> See Our Team</span></h3>
+            <h2 class="section-title">OUR <span>TRAINERS</span></h2>
+            <p class="section-description">
+                Our gym trainers are fitness experts who help people achieve their health and fitness goals.
+                They provide guidance on proper exercise techniques, and offer support and motivation.
+            </p>
+            <div class="trainers-carousel">
+                <div class="trainer-card">
+                    <img src="image/body.png" alt="Ronald Richards">
+                    <h3>Ronald Richards</h3>
+                    <p class="trainer-role"><i class="fas fa-dumbbell"></i> Personal Trainer</p>
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="trainer-card">
+                    <img src="image/loss.png" alt="Esther Howard">
+                    <h3>Esther Howard</h3>
+                    <p class="trainer-role"><i class="fas fa-heartbeat"></i> Universal Trainer</p>
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="trainer-card">
+                    <img src="image/healy.png" alt="Arlene McCoy">
+                    <h3>Arlene McCoy</h3>
+                    <p class="trainer-role"><i class="fas fa-wheelchair"></i> Rehabilitation Coach</p>
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="trainer-card">
+                    <img src="image/cycle.png" alt="Elina Miles">
+                    <h3>Elina Miles</h3>
+                    <p class="trainer-role"><i class="fas fa-dumbbell"></i> Personal Trainer</p>
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* <-------------------- protein-products-section  Html------------------>
+    <section class="protein-products-section" id="Products">
+        <h2>++<span> See Our Latest Protein Product's</span></h2>
+        <h1>PROTEIN <span class="highlight">PRODUCT'S</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+            sociis theme natoque.</p>
+
+        <div class="products-container">
+            <div class="product-card">
+                <img src="image/protine.jpg" alt="Protein 100% Green">
+                <h3>Protein 100% Green</h3>
+                <p class="price">$85</p>
+                <p>Maecenas tempus, sem quam semper libero, sit amet adipiscing.</p>
+                <button class="add-to-cart" data-product="Protein 100% Green">Add to Cart →</button>
+            </div>
+            <div class="product-card">
+                <img src="image/protine.jpg" alt="Protein 100% Teal">
+                <h3>Protein 100% Teal</h3>
+                <p class="price">$85</p>
+                <p>Maecenas tempus, sem quam semper libero, sit amet adipiscing.</p>
+                <button class="add-to-cart" data-product="Protein 100% Teal">Add to Cart →</button>
+            </div>
+            <div class="product-card">
+                <img src="image/protine.jpg" alt="Protein 100% Purple">
+                <h3>Protein 100% Purple</h3>
+                <p class="price">$85</p>
+                <p>Maecenas tempus, sem quam semper libero, sit amet adipiscing.</p>
+                <button class="add-to-cart" data-product="Protein 100% Purple">Add to Cart →</button>
+            </div>
+        </div>
+    </section>
+    <!-- Toast Notification -->
+    <div id="toast-container"></div>
+    <!-- /* <-------------------- pricing-section-section  Html------------------>
+    <section class="pricing-section" id="Membership">
+        <p><i class="fas fa-plus"></i><i class="fas fa-plus"></i> We got the best plan for you</p>
+        <h1>Choose the <span>Perfect Membership Plan for You</span></h1>
+        <p>Unlock Unlimited Access to Fitness with Our Flexible Membership Options Designed for Your Lifestyle and
+            Budget</p>
+        <div class="toggle-switch">
+            <button class="toggle-button active" id="monthly-btn">Month</button>
+            <button class="toggle-button" id="yearly-btn">Year</button>
+        </div>
+        <div class="plans-container">
+            <div class="plan basic-plan" data-monthly="12" data-yearly="120">
+                <h2 class="price">$12</h2>
+                <h3>Basic Membership Plan</h3>
+                <button class="discover-btn">Discover More</button>
+                <ul>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                </ul>
+            </div>
+            <div class="plan premium-plan" data-monthly="120" data-yearly="1200">
+                <h2 class="price">$120</h2>
+                <h3>Premium Membership Plan</h3>
+                <button class="discover-btn">Discover More</button>
+                <ul>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                </ul>
+            </div>
+            <div class="plan family-plan" data-monthly="800" data-yearly="8000">
+                <h2 class="price">$800</h2>
+                <h3>Family Membership Plan</h3>
+                <button class="discover-btn">Discover More</button>
+                <ul>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                    <li>Maecenas Tempus, Sem Quam Semper Libero, Sit Amet Adipisc.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /* <-------------------- Footer-section  Html------------------>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2 class="logo-text">Fitness <span>Forge</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde amet natus reiciendis esse
+                    dolore ea asperiores, placeat impedit quia.</p>
+                <div class="socials">
+                    <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="path/to/vimeo-icon.png" alt="Vimeo"></a>
+                    <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">
+                            Feature</a></li>
+                    <li><a href="#">
+
+                            Team
+                        </a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section support">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><span>📞</span> (252) xxx-xxxx</li>
+                    <li><span>📧</span> Fitness Forge@Gmail.Com</li>
+                    <li><span>📍</span> 84 Main Delhi, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitnessForge, All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
