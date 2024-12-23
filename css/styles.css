@@ -51,8 +51,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Center the menu items horizontally */
-  flex: 1; /* Allow it to take up available space */
+  justify-content: center; 
+  flex: 1;
 }
 
 .nav-menu li {
@@ -120,7 +120,7 @@ body {
   display: none;
 }
 
-/* Adjustments for laptop and desktop views */
+
 @media (min-width: 769px) {
   .nav-menu {
     position: relative;
@@ -147,7 +147,7 @@ body {
   }
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
   .nav-menu {
     right: -100%;
@@ -193,7 +193,6 @@ body {
   border-radius: 5px;
 }
 
-/* Cart Header */
 .cart-header {
   margin-bottom: 10px;
 }
@@ -203,7 +202,7 @@ body {
   color: #eaff00;
 }
 
-/* Cart Items */
+
 .cart-items {
   max-height: 200px;
   overflow-y: auto;
@@ -247,7 +246,7 @@ body {
   cursor: pointer;
 }
 
-/* Cart Footer */
+
 .cart-footer {
   display: flex;
   justify-content: space-between;
@@ -284,7 +283,7 @@ body {
   line-height: 1;
 }
 
-/* Checkout Modal */
+
 .checkout-modal {
   display: none;
   position: fixed;
@@ -348,9 +347,9 @@ body {
 .place-order-btn:hover {
   background-color: #333;
 }
-/* Base styles for the login modal */
+
 .login-modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 1001;
   left: 0;
@@ -415,7 +414,7 @@ body {
   background-color: #333;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .login-content {
     width: 90%;
@@ -509,7 +508,7 @@ body {
   background-color: #333;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .google-login {
     width: 100%;
@@ -544,7 +543,7 @@ body {
   padding: 50px;
   color: white;
   background-color: #222;
-  position: relative; /* Added for social icons */
+  position: relative; 
 }
 
 .hero-content {
@@ -667,7 +666,6 @@ body {
   color: #e3e312;
 }
 
-/* Extra Large Screens (Desktops and larger, 1200px and up) */
 @media (min-width: 1200px) {
   .hero-content h1 {
     font-size: 4.5rem;
@@ -682,7 +680,7 @@ body {
   }
 }
 
-/* Large Screens (Laptops/Desktops, 992px to 1199px) */
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-content h1 {
     font-size: 3.5rem;
@@ -701,7 +699,6 @@ body {
   }
 }
 
-/* Medium Screens (Tablets, 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-section {
     flex-direction: column;
@@ -744,7 +741,6 @@ body {
   }
 }
 
-/* Small Screens (Mobile devices, 576px to 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -766,7 +762,6 @@ body {
   }
 }
 
-/* Extra Small Screens (Smaller mobile devices, up to 575px) */
 @media (max-width: 575px) {
   .hero-content h1 {
     font-size: 2.5rem; 
@@ -805,7 +800,9 @@ body {
     display: none;
   }
 }
-
+.right-photo{
+  border: 2px solid red;
+}
 
 
 /* <-------------------- Logo Banner Section Css------------------> */
@@ -940,9 +937,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
   width: calc(100% - 40px);
-  max-width: 350px;
+  max-width: 280px;
   box-sizing: border-box;
   transition: transform 0.3s ease;
+  gap: 20px;
 }
 
 .card1:hover {
@@ -1030,6 +1028,7 @@ p {
 
   .cards1 {
     flex-direction: column;
+    gap: 20px;
   }
 
   .card1 {
@@ -1073,6 +1072,7 @@ p {
 
   .cards1 {
     flex-direction: row;
+    gap: 20px;
   }
 
   .card1 {
@@ -1115,6 +1115,7 @@ p {
 
   .cards1 {
     flex-direction: row;
+    gap: 20px;
   }
 
   .card1 {
@@ -1157,6 +1158,7 @@ p {
   .cards1 {
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
   }
 
   .card1 {
@@ -1802,4 +1804,3 @@ p {
     padding-top: 20px;
   }
 }
-
